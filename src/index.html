@@ -12,23 +12,33 @@
     />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <form class="search-form" id="search-form">
       <input type="text" name="query" autocomplete="off" placeholder="Search images..." />
-      <button type="submit">Submit</button>
+      <div id="body_button">
+        <button type="submit" class="button_hola"><span>Submit</span></button>
+      </div>
     </form>
-    <!-- <div class="d-grid gap-2 col-6 mx-auto mb-3">
-      <button class="btn btn-info" type="button" data-action="get-users">Get GitHub users</button>
-    </div> -->
 
     <table class="result table table-sm"></table>
 
     <p class="error"></p>
 
     <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-info is-hidden" type="button" disabled data-action="load-more">
+      <button
+        class="button_hola btn btn-info is-hidden"
+        type="button"
+        disabled
+        data-action="load-more"
+      >
         <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
         <span class="label">Load more</span>
       </button>

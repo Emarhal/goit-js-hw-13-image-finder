@@ -3,6 +3,8 @@ body {
   background: #fff;
   font-size: 16px;
   padding: 30px;
+  background-image: url(https://cdn.pixabay.com/photo/2020/07/06/01/33/forest-5375005_960_720.jpg);
+  background-size: cover;
 }
 
 img,
@@ -12,8 +14,6 @@ video {
 
 button {
   display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 
 button[data-action='load-more'].is-hidden {
@@ -26,4 +26,185 @@ button[data-action='load-more'] > .spinner-grow.is-hidden {
 
 .error {
   color: red;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.input {
+  margin-right: 40px;
+  border-color: #000000;
+}
+
+.load-more {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.submitBtn {
+  border-radius: 5px;
+  background-color: inherit;
+}
+
+.photo-card img {
+  height: 100%;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+.photo-card {
+  background-color: rgba(255, 255, 255, 0.808);
+  padding: 5px;
+  margin: 15px;
+  width: calc((100% - 120px) / 4);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+table {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.photo-card:hover {
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  transform: scale(1.03);
+}
+
+.photo-card:nth-child(4n) {
+  margin-right: 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats-item {
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.material-icons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-family: 'Architects Daughter', cursive;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+
+  padding: 3px 15px 3px 15px;
+  color: white;
+  font-size: 12px;
+  line-height: 1.5;
+  border: 2px solid white;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(57, 133, 184);
+}
+
+#body_button {
+  background: #000;
+  margin: 0;
+  padding: 0;
+  color: #ddf;
+  background-color: #112;
+  text-align: center;
+}
+.button_hola,
+.button_hola::before,
+.button_hola::after,
+.button_hola span,
+.button_hola span::before,
+.button_hola span::after {
+  transition: all ease 0.5s;
+}
+
+.button_hola {
+  position: relative;
+  display: inline-block;
+  /* padding: 0.3em;
+  margin: 1em;
+  border: solid 1px; */
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.button_hola:hover {
+  box-shadow: 0 0 5em 0.5em rgba(50, 50, 150, 0.5);
+}
+
+.button_hola span {
+  display: inline-block;
+  width: 100%;
+  padding: 0.6em 2em;
+}
+
+.button_hola:hover span {
+  background-color: #fff;
+  color: #112;
+}
+
+.button_hola::before,
+.button_hola::after,
+.button_hola span::before,
+.button_hola span::after {
+  content: '';
+  position: absolute;
+  border: 1px;
+}
+
+.button_hola::before,
+.button_hola span::before {
+  border-style: solid none;
+}
+
+.button_hola::before,
+.button_hola span::after {
+  left: 0;
+  top: -0.4em;
+  width: 100%;
+  height: calc(100% + 0.8em);
+}
+
+.button_hola::after,
+.button_hola span::after {
+  border-style: none solid;
+}
+
+.button_hola::after,
+.button_hola span::before {
+  top: 0;
+  left: -0.4em;
+  height: 100%;
+  width: calc(100% + 0.8em);
+}
+
+.button_hola:hover::after,
+.button_hola:hover span::after {
+  transform: scaleY(0);
+}
+
+.button_hola:hover::before,
+.button_hola:hover span::before {
+  transform: scaleX(0);
+}
+
+.button_hola:hover span::after,
+.button_hola:hover span::before {
+  opacity: 0;
 }
